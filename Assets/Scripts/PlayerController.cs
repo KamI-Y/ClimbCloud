@@ -40,7 +40,12 @@ public class PlayerController : MonoBehaviour
 //プレイヤの速度におおじてアニメーション速度を変える
 this.animator.speed = speedx / 2.0f;
         }
+        //ゴールに到達
+        void OnTriggerEnter2D(Collider2D collosion)
+        {
+            Debug.Log("ゴール");
         }
+                }
         
     }
 }
